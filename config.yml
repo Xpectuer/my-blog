@@ -47,12 +47,12 @@ params:
     favicon: "images/sl.png"
     favicon16x16: "<link / abs url>"
     favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link resources/_gen/images/dio.webp url>"
+    apple_touch_icon: "<link resources/_gen/images/dio.webp>"
     safari_pinned_tab: "<link / abs url>"
 
   label:
     text: "具体问题，具体分析是马克思主义活的灵魂"
-    icon: "/images/sl.png" 
+    icon: "images/sl.png" 
     iconHeight: 35
 
   # profile-mode
@@ -99,7 +99,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/Xpectuer/my-blog/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -125,7 +125,7 @@ menu:
       weight: 20
     - identifier: url
       name: noobi.github.io
-      url: https://xpectuer.github.io/
+      url: https://xpectuer.github.io/my-blog
       weight: 30
 
 
