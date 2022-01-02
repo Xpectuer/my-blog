@@ -2,21 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://xpectuer.github.io/my-blog/tags/introduction-to-algorithm/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>http://xpectuer.github.io/my-blog/posts/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>http://xpectuer.github.io/my-blog/tags/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>http://xpectuer.github.io/my-blog/posts/intro_to_algo/basic/basic/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>http://xpectuer.github.io/my-blog/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-  </url><url>
     <loc>http://xpectuer.github.io/my-blog/tags/algorithm/</loc>
   </url><url>
     <loc>http://xpectuer.github.io/my-blog/categories/</loc>
@@ -24,5 +9,11 @@
     <loc>http://xpectuer.github.io/my-blog/posts/leetcode/miscs/390/</loc>
   </url><url>
     <loc>http://xpectuer.github.io/my-blog/tags/maths/</loc>
+  </url><url>
+    <loc>http://xpectuer.github.io/my-blog/posts/</loc>
+  </url><url>
+    <loc>http://xpectuer.github.io/my-blog/tags/</loc>
+  </url><url>
+    <loc>http://xpectuer.github.io/my-blog/</loc>
   </url>
 </urlset>
