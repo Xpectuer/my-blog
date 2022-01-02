@@ -52,8 +52,8 @@ params:
 
   label:
     text: "具体问题，具体分析是马克思主义活的灵魂"
-    icon: "images/sl.png" 
-    iconHeight: 35
+    #icon: "images/sl.png" 
+    #iconHeight: 35
 
   # profile-mode
   profileMode:
