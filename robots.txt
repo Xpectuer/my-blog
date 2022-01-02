@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://xpectuer.github.io/blog-of-noobi/sitemap.xml

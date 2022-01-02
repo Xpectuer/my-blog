@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>苟利国家生死以，岂因祸福避趋之</title>
+    <link>https://xpectuer.github.io/blog-of-noobi/</link>
+    <description>Recent content on 苟利国家生死以，岂因祸福避趋之</description>
+    <image>
+      <url>https://xpectuer.github.io/blog-of-noobi/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://xpectuer.github.io/blog-of-noobi/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://xpectuer.github.io/blog-of-noobi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>微积分在算法分析中的应用</title>
+      <link>https://xpectuer.github.io/blog-of-noobi/posts/intro_to_algo/basic/basic/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://xpectuer.github.io/blog-of-noobi/posts/intro_to_algo/basic/basic/</guid>
+      <description>简要介绍算法分析中的微积分思想的应用，为之后的学习作铺垫。</description>
+    </item>
+    
+    <item>
+      <title>LC390.消除游戏</title>
+      <link>https://xpectuer.github.io/blog-of-noobi/posts/leetcode/miscs/390/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xpectuer.github.io/blog-of-noobi/posts/leetcode/miscs/390/</guid>
+      <description>本题精华在于递推与性质证明</description>
+    </item>
+    
+  </channel>
+</rss>
