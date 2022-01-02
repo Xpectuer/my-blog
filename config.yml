@@ -1,4 +1,4 @@
-baseURL: "https://xpectuer.github.io/blog-of-noobi"
+baseURL: "http://xpectuer.github.io/my-blog/"
 title: "苟利国家生死以，岂因祸福避趋之"
 paginate: 5
 theme: PaperMod
