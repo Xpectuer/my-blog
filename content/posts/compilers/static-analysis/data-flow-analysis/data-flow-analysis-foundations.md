@@ -234,7 +234,7 @@ The $\sqcap$ equals to $\cap$
 ### Product Lattice
 
 > **Recall Cartesian product 复习一下笛卡尔积:**
-e.g. Given set $**A$$=\\{a,b\\}$** and $B$$=\\{1,2,3\\}$,
+e.g. Given set $A=\\{a,b\\}$ and $B=\\{1,2,3\\} $,
 $A \times B = \\{(a,1),(a,2),(a,3),(b,1),(b,2),(b,3)\\}$
 > 
 
