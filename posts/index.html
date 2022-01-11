@@ -29,7 +29,7 @@
 <script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-123-45','auto'),ga('send','pageview'))</script><meta property="og:title" content="Posts">
 <meta property="og:description" content="ExampleSite description">
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://xpectuer.github.io/my-blog/posts/"><meta property="og:image" content="http://xpectuer.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="og:site_name" content="后现代主义生活黑客 📚">
+<meta property="og:url" content="http://xpectuer.github.io/my-blog/posts/"><meta property="og:image" content="http://xpectuer.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="og:site_name" content="苟利国家生死以，岂因祸福避趋之">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="http://xpectuer.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
 <meta name=twitter:title content="Posts">
@@ -50,8 +50,8 @@
 </div>
 <ul id=menu>
 <li>
-<a href=http://xpectuer.github.io/my-blog/categories/ title=分类>
-<span>分类</span>
+<a href=http://xpectuer.github.io/my-blog/aboutme/ title=关于我>
+<span>关于我</span>
 </a>
 </li>
 <li>
@@ -60,8 +60,8 @@
 </a>
 </li>
 <li>
-<a href=https://xpectuer.github.io/my-blog title=noobi.github.io>
-<span>noobi.github.io</span>
+<a href=https://xpectuer.github.io/my-blog title=主页>
+<span>主页</span>
 </a>
 </li>
 </ul>
@@ -71,6 +71,39 @@
 <header class=page-header><div class=breadcrumbs><a href=http://xpectuer.github.io/my-blog/>Home</a></div>
 <h1>Posts</h1>
 </header>
+<article class=post-entry>
+<header class=entry-header>
+<h2>【软件分析笔记】数据流分析：基础与原理篇
+</h2>
+</header>
+<section class=entry-content>
+<p>Data Flow Analysis: Foundations 在应用篇的所有算法，都可以看作是 Iterative Algorithm
+现在，我们从形式化 Formal的角度来审视这些算法：
+A Functional View of Iterative Algorithm (Define)Given a CFG i.e.: a program with k nodes, the iterative algorithm updates $OUT[n]$ for every node n in each iteration.
+(Domain)Assume the domain of the values in data flow analysis is $V$, then we can define a K-tuple
+$$ (OUT[n_1],OUT[n_2],…,OUT[n_k]) $$
+as an element of set $\color{red}(V_1 \times V_2 \times … \times V_k)$ denoted as $\color{red}V^k$, to hold the values of the analysis after each iteration....</p>
+</section>
+<footer class=entry-footer><span title="2020-09-15 11:30:03 +0000 UTC">September 15, 2020</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;Noobi</footer>
+<a class=entry-link aria-label="post link to 【软件分析笔记】数据流分析：基础与原理篇" href=http://xpectuer.github.io/my-blog/posts/compilers/static-analysis/data-flow-analysis/data-flow-analysis-foundations/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>【软件分析笔记】数据流分析：应用篇
+</h2>
+</header>
+<section class=entry-content>
+<p>Data Flow Analysis：Applications Overview What is Data Flow Analysis ?
+How application-specific Data flows on CFG with safe approximation.
+分析算法感兴趣的数据如何流经控制流图。
+CFG Nodes (Basic Blocks) 基本块 Edges (Control Flow) 控制流 CFG(a program) 整个程序 Safe Approximation safe approximation for different purposes 不同的分析目的，对于safe有不同的定义:
+Must Analysis：Under Approximation May Analysis: Over Approximation 相同点：这两种目的往往殊途同归地达到Soundness。
+不同的目的对应了不同的手段：1. Data Abstraction 2. Approximation Strategies i.e. transfer functions & control flow handling.
+Preliminaries for Data Flow Analysis Input & Output States Definition:...</p>
+</section>
+<footer class=entry-footer><span title="2020-09-15 11:30:03 +0000 UTC">September 15, 2020</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Noobi</footer>
+<a class=entry-link aria-label="post link to 【软件分析笔记】数据流分析：应用篇" href=http://xpectuer.github.io/my-blog/posts/compilers/static-analysis/data-flow-analysis/data-flow-anlaysis-applications/></a>
+</article>
 <article class=post-entry>
 <header class=entry-header>
 <h2>LC390.消除游戏
