@@ -53,7 +53,7 @@ editPost:
     (OUT[n_1],OUT[n_2],...,OUT[n_k])
     $$
     
-    as an element of set $\color{red}(V_1 \times V_2 \times ... \times V_k)$ denoted as $\color{red}V^k$, to hold the values of the analysis after **each iteration**.
+    as an element of set $(V_1 \times V_2 \times ... \times V_k)$ denoted as $V^k$, to hold the values of the analysis after **each iteration**.
     
 - (**Action**)**Each iteration** can be considered as taking an action to map an element of $V^k$ to a new element of $V^k$, through applying the transfer functions and control-flow handling, abstracted as a function $F: V^k \to V^k$
 - (**Convergence**)Then the algorithm outputs a series of k-tuples iteratively util a k-tuple is the same as the last one in 2 consecutive iterations.
