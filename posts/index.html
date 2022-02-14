@@ -20,7 +20,7 @@
 <link rel=mask-icon href=http://xpectuer.github.io/my-blog/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.91.2">
+<meta name=generator content="Hugo 0.92.2">
 <link rel=alternate type=application/rss+xml href=http://xpectuer.github.io/my-blog/posts/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
@@ -71,6 +71,28 @@
 <header class=page-header><div class=breadcrumbs><a href=http://xpectuer.github.io/my-blog/>Home</a></div>
 <h1>Posts</h1>
 </header>
+<article class=post-entry>
+<header class=entry-header>
+<h2>【碎碎念】读《Java有值类型吗？》有感
+</h2>
+</header>
+<section class=entry-content>
+<p>观点： 通过实现“值类型”，实现inline优化，又不改变Java全是引用类型的语义。
+论据 思想实验：
+int x = 1; // x指向内存地址A，内容是整数1 int y = x; // （记住这个y） y指向同样的内存地址A，内容是整数1 x = 2; // x指向另一个内存地址B，内容是整数2。y仍然指向地址A，内容是1。 System.out.println(x); System.out.println(y); // out: // 可以看到 // 2 // 1 引用类型特有那些操作？
+dereference；例如C中*a struct的分量访问和修改；例如，C中的a.foo = 1 而对于「基本类型」，以上操作均不能实现。
+前者由于Java不提供；后者由于「基本类型」不是复合类型，也就无法实现。
+引用= 的语义？
+将引用绑定给一个新的对象。 那么我们的「基本类型」能做什么事情？
+读取它的值 修改它的值 那么，实际上，值类型的实现和引用类型的实现本质上的结果完全一致。
+由此得出结论，对于「基本类型」，值类型和引用类型等价。
+对这篇文章的疑惑 语义上，我们难道不是按照值类型的语义来传递参数的吗？
+难道按照引用传递，不属于引用类型的语义吗？
+public void test() throws Exception{ int x = 2; foo(x); // 传递了值 System....</p>
+</section>
+<footer class=entry-footer><span title="2022-02-13 04:20:03 +0000 UTC">February 13, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Noobi</footer>
+<a class=entry-link aria-label="post link to 【碎碎念】读《Java有值类型吗？》有感" href=http://xpectuer.github.io/my-blog/posts/compilers/java/java-value-type/java_value_type/></a>
+</article>
 <article class=post-entry>
 <header class=entry-header>
 <h2>【软件分析笔记】数据流分析：基础与原理篇

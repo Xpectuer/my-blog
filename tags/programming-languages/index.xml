@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>programming languages on 苟利国家生死以，岂因祸福避趋之</title>
+    <link>http://xpectuer.github.io/my-blog/tags/programming-languages/</link>
+    <description>Recent content in programming languages on 苟利国家生死以，岂因祸福避趋之</description>
+    <image>
+      <url>http://xpectuer.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://xpectuer.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 13 Feb 2022 04:20:03 +0000</lastBuildDate><atom:link href="http://xpectuer.github.io/my-blog/tags/programming-languages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【碎碎念】读《Java有值类型吗？》有感</title>
+      <link>http://xpectuer.github.io/my-blog/posts/compilers/java/java-value-type/java_value_type/</link>
+      <pubDate>Sun, 13 Feb 2022 04:20:03 +0000</pubDate>
+      
+      <guid>http://xpectuer.github.io/my-blog/posts/compilers/java/java-value-type/java_value_type/</guid>
+      <description>Java真的全是引用！！！</description>
+    </item>
+    
+  </channel>
+</rss>

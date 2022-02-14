@@ -3,11 +3,11 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>maths | 苟利国家生死以，岂因祸福避趋之</title>
+<title>programming languages | 苟利国家生死以，岂因祸福避趋之</title>
 <meta name=keywords content>
 <meta name=description content="ExampleSite description">
 <meta name=author content="Me">
-<link rel=canonical href=http://xpectuer.github.io/my-blog/tags/maths/>
+<link rel=canonical href=http://xpectuer.github.io/my-blog/tags/programming-languages/>
 <meta name=google-site-verification content="XYZabc">
 <meta name=yandex-verification content="XYZabc">
 <meta name=msvalidate.01 content="XYZabc">
@@ -21,18 +21,18 @@
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.92.2">
-<link rel=alternate type=application/rss+xml href=http://xpectuer.github.io/my-blog/tags/maths/index.xml>
+<link rel=alternate type=application/rss+xml href=http://xpectuer.github.io/my-blog/tags/programming-languages/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
 </noscript>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-123-45','auto'),ga('send','pageview'))</script><meta property="og:title" content="maths">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-123-45','auto'),ga('send','pageview'))</script><meta property="og:title" content="programming languages">
 <meta property="og:description" content="ExampleSite description">
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://xpectuer.github.io/my-blog/tags/maths/"><meta property="og:image" content="http://xpectuer.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="og:site_name" content="苟利国家生死以，岂因祸福避趋之">
+<meta property="og:url" content="http://xpectuer.github.io/my-blog/tags/programming-languages/"><meta property="og:image" content="http://xpectuer.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="og:site_name" content="苟利国家生死以，岂因祸福避趋之">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="http://xpectuer.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
-<meta name=twitter:title content="maths">
+<meta name=twitter:title content="programming languages">
 <meta name=twitter:description content="ExampleSite description">
 </head>
 <body class=list id=top>
@@ -68,34 +68,29 @@
 </header>
 <main class=main>
 <header class=page-header><div class=breadcrumbs><a href=http://xpectuer.github.io/my-blog/>Home</a>&nbsp;»&nbsp;<a href=http://xpectuer.github.io/my-blog/tags/>Tags</a></div>
-<h1>maths</h1>
+<h1>programming languages</h1>
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
-<h2>LC390.消除游戏
+<h2>【碎碎念】读《Java有值类型吗？》有感
 </h2>
 </header>
 <section class=entry-content>
-<p>LC390.消除游戏 Created: January 2, 2022 1:46 PM
-声明：我写的文章只是为了只有一个目的———把方法讲清楚、讲通透。 OJ上很少存在某个人原创的方法，大部分只是对已有的方法的重复。
-⚠️长度警告
-Brute Force 暴力法 我们先来分析数组手动模拟的不可行性。
-注意到 $1 \le n \le 10^9$。假设每个数 16bit，存放所有中间数需要最多 $16 \times 10^9$bit 也就是约 2GB！！。
-就算预处理第一轮去除所有奇数，也要1GB。
-要知道一般的OJ平台的上限仅仅是MB级别。因此，显然不可行。
-我们必须寻求一些数学方法，一个是从数列的角度，一个是从函数的角度。
-数列的角度 从题目的描述来看，我们的输入，无论怎么消除，仅仅只是一串等差数列。
-回顾等差数列的三要素：1. 首项 $a_1$； 2. 公差 $d$； 3. 项数 $n$；
-并有如下公式成立：
-$$a_n = a_1 + (n-1)\cdot d$$
-因此，就没有必要再存储数列中的每个元素的值了。
-如果把输入看作是一个等差数列 $a^0$。e.g. 1, 2, 3, 4 ,5
-那么，消除第一轮的产生一个新的等差数列 $a^1$。e.g. 2, 4
-那么，消除第二轮的产生一个新的等差数列 $a^2$。e.g. 2
-以此类推，消除$turn$轮产生一个新的等差数列 $a^{turn}$。...</p>
+<p>观点： 通过实现“值类型”，实现inline优化，又不改变Java全是引用类型的语义。
+论据 思想实验：
+int x = 1; // x指向内存地址A，内容是整数1 int y = x; // （记住这个y） y指向同样的内存地址A，内容是整数1 x = 2; // x指向另一个内存地址B，内容是整数2。y仍然指向地址A，内容是1。 System.out.println(x); System.out.println(y); // out: // 可以看到 // 2 // 1 引用类型特有那些操作？
+dereference；例如C中*a struct的分量访问和修改；例如，C中的a.foo = 1 而对于「基本类型」，以上操作均不能实现。
+前者由于Java不提供；后者由于「基本类型」不是复合类型，也就无法实现。
+引用= 的语义？
+将引用绑定给一个新的对象。 那么我们的「基本类型」能做什么事情？
+读取它的值 修改它的值 那么，实际上，值类型的实现和引用类型的实现本质上的结果完全一致。
+由此得出结论，对于「基本类型」，值类型和引用类型等价。
+对这篇文章的疑惑 语义上，我们难道不是按照值类型的语义来传递参数的吗？
+难道按照引用传递，不属于引用类型的语义吗？
+public void test() throws Exception{ int x = 2; foo(x); // 传递了值 System....</p>
 </section>
-<footer class=entry-footer>2 min&nbsp;·&nbsp;Noobi</footer>
-<a class=entry-link aria-label="post link to LC390.消除游戏" href=http://xpectuer.github.io/my-blog/posts/leetcode/miscs/390/></a>
+<footer class=entry-footer><span title="2022-02-13 04:20:03 +0000 UTC">February 13, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Noobi</footer>
+<a class=entry-link aria-label="post link to 【碎碎念】读《Java有值类型吗？》有感" href=http://xpectuer.github.io/my-blog/posts/compilers/java/java-value-type/java_value_type/></a>
 </article>
 </main>
 <footer class=footer>
