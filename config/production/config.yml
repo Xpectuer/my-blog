@@ -40,9 +40,9 @@ params:
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    Title: "后现代主义生活黑客 \U0001F4DA"
-    subtitle: "计算机科学，准确地来说，并不是一门科学，它甚至与计算机本身无关。
-  <br/> 这是一门源于工程、数学与艺术，用于解决复杂问题的学科，是一门值得修炼的真功夫。"
+    Title: "名声，只是一种糟糕的错觉 \U0001F4DA"
+    subtitle: "Computer Science is no more about computers than astronomy is about telescopes.<br>
+——— E. W. Dijkstra"
     imageUrl: "https://xpectuer.github.io/my-blog/images/sl.png"
     imageWidth: 120
     imageHeight: 120
