@@ -3,8 +3,7 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>LC390.消除游戏 | 苟利国家生死以，岂因祸福避趋之</title>
-<meta name=keywords content="algorithm,maths">
+<title>LC390.消除游戏 | 苟利国家生死以，岂因祸福避趋之</title><meta name=keywords content="algorithm,maths">
 <meta name=description content="本题精华在于递推与性质证明">
 <meta name=author content="Noobi">
 <link rel=canonical href=https://canonical.url/to/page>
@@ -13,7 +12,7 @@
 <meta name=msvalidate.01 content="XYZabc">
 <link crossorigin=anonymous href=/my-blog/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css integrity="sha256-yIlj/i15RiAA/Q+xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as=style>
 <link rel=preload href=https://xpectuer.github.io/my-blog/images/sl.png as=image>
-<script defer crossorigin=anonymous src=/my-blog/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<script defer crossorigin=anonymous src=/my-blog/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI=" onload=hljs.initHighlightingOnLoad()></script>
 <link rel=icon href=https://xpectuer.github.io/my-blog/images/sl.png>
 <link rel=icon type=image/png sizes=16x16 href=http://xpectuer.github.io/my-blog/%3Clink%20/%20abs%20url%3E>
 <link rel=icon type=image/png sizes=32x32 href=http://xpectuer.github.io/my-blog/%3Clink%20/%20abs%20url%3E>
@@ -21,13 +20,10 @@
 <link rel=mask-icon href=http://xpectuer.github.io/my-blog/%3Clink%20/%20abs%20url%3E>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.2">
+<meta name=generator content="Hugo 0.93.2">
 <noscript>
-<style>#theme-toggle,.top-link{display:none}</style>
-<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
-</noscript>
-<script type=text/javascript async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({tex2jax:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$']],processEscapes:!0,processEnvironments:!0,skipTags:['script','noscript','style','textarea','pre'],TeX:{equationNumbers:{autoNumber:"AMS"},extensions:["AMSmath.js","AMSsymbols.js"]}}}),MathJax.Hub.Queue(function(){var b=MathJax.Hub.getAllJax(),a;for(a=0;a<b.length;a+=1)b[a].SourceElement().parentNode.className+=' has-jax'}),MathJax.Hub.Config({TeX:{equationNumbers:{autoNumber:"AMS"}}})</script>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-123-45','auto'),ga('send','pageview'))</script><meta property="og:title" content="LC390.消除游戏">
+<style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script type=text/javascript async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"]],processEscapes:!0,processEnvironments:!0,skipTags:["script","noscript","style","textarea","pre"],TeX:{equationNumbers:{autoNumber:"AMS"},extensions:["AMSmath.js","AMSsymbols.js"]}}}),MathJax.Hub.Queue(function(){var t=MathJax.Hub.getAllJax(),e;for(e=0;e<t.length;e+=1)t[e].SourceElement().parentNode.className+=" has-jax"}),MathJax.Hub.Config({TeX:{equationNumbers:{autoNumber:"AMS"}}})</script>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,o,i,a,t,n,s){e.GoogleAnalyticsObject=t,e[t]=e[t]||function(){(e[t].q=e[t].q||[]).push(arguments)},e[t].l=1*new Date,n=o.createElement(i),s=o.getElementsByTagName(i)[0],n.async=1,n.src=a,s.parentNode.insertBefore(n,s)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-123-45","auto"),ga("send","pageview"))</script><meta property="og:title" content="LC390.消除游戏">
 <meta property="og:description" content="本题精华在于递推与性质证明">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://xpectuer.github.io/my-blog/posts/leetcode/miscs/390/">
@@ -38,10 +34,9 @@
 <meta name=twitter:title content="LC390.消除游戏">
 <meta name=twitter:description content="本题精华在于递推与性质证明">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"http://xpectuer.github.io/my-blog/posts/"},{"@type":"ListItem","position":2,"name":"LC390.消除游戏","item":"http://xpectuer.github.io/my-blog/posts/leetcode/miscs/390/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"LC390.消除游戏","name":"LC390.消除游戏","description":"本题精华在于递推与性质证明","keywords":["algorithm","maths"],"articleBody":"LC390.消除游戏 Created: January 2, 2022 1:46 PM\n 声明：我写的文章只是为了只有一个目的———把方法讲清楚、讲通透。 OJ上很少存在某个人原创的方法，大部分只是对已有的方法的重复。\n ⚠️长度警告\nBrute Force 暴力法 我们先来分析数组手动模拟的不可行性。\n  注意到 $1 \\le n \\le 10^9$。假设每个数 16bit，存放所有中间数需要最多 $16 \\times 10^9$bit 也就是约 2GB！！。\n就算预处理第一轮去除所有奇数，也要1GB。\n要知道一般的OJ平台的上限仅仅是MB级别。因此，显然不可行。\n  我们必须寻求一些数学方法，一个是从数列的角度，一个是从函数的角度。\n数列的角度 从题目的描述来看，我们的输入，无论怎么消除，仅仅只是一串等差数列。\n回顾等差数列的三要素：1. 首项 $a_1$； 2. 公差 $d$； 3. 项数 $n$；\n并有如下公式成立：\n$$a_n = a_1 + (n-1)\\cdot d$$\n因此，就没有必要再存储数列中的每个元素的值了。\n如果把输入看作是一个等差数列 $a^0$。e.g. 1, 2, 3, 4 ,5\n那么，消除第一轮的产生一个新的等差数列 $a^1$。e.g. 2, 4\n那么，消除第二轮的产生一个新的等差数列 $a^2$。e.g. 2\n以此类推，消除$turn$轮产生一个新的等差数列 $a^{turn}$。\n不难看出，每一轮消除过后存在一下差别：\n 公差 $d$ 加倍了 首项 $a_1$ 变了 项数 $n$ 变了  于是我们就要探索一下这三者是怎么变的：\n  对于公差 $d$，无论是从左向右还从右向左消除，都会加倍\n  对于项数 $n$，与公差类似，每次都会减半，准确的说，是$\\left \\lfloor \\frac{n}{2}\\right \\rfloor$ 。\n  首项$a_1$则相对复杂，需要讨论一下消除轮数 $turn$ 与项数$n$的奇偶性。\n注：最好自己拿草稿纸推敲一下\n首先讨论轮数 $turn$，再讨论项数$n$，由于规定起始 $turn = 0$\n 当 $turn$为偶数时，从左向右消除  此时一定有$a_1^{turn} = a_1^{turn-1}+d$   当 $turn$为奇数时，从右向左消除  当且仅当$n$为奇数时，有$a_1^{turn} = a_1^{turn-1}+d$      经过以上讨论，只要把以上的变化翻译成代码，反复迭代，直到$n=1$即可。\nclass Solution { public: int lastRemaining(int n) { int turn = 0; int step = 1; int cnt = n; int a_1 = 1; while(cnt  1) { if(turn % 2 == 0) { // turn 是偶数 从左向右  a_1 = a_1 + step; } else { // 从右向左  if(cnt \u0026 1 == 1) a_1 = a_1 + step; } step = step  1; cnt = cnt  1; turn++; } return a_1; } };  （重点）函数的角度 在做解微分方程的时候，我们希望解出某个函数的解析解（上面的方法就是一个）。\n但是有时候当我们无法得到解析解时，也可以考虑将方程简化，得到一个函数的递推关系。\n定义：$f(n)$是以自左向右开始，间隔一个消除直到只剩一个的元素的函数。\n注：说白了就是题目要求我们写的代码。\n定义：$g(n)$是以自右向做开始，间隔一个消除直到只剩一个的元素的函数。\n 以上的两个函数存在以下性质：  $$f(n)+g(n)= n+1$$\n【证明】\nC 1 line solution with explanation - LeetCode Discuss\n令输入序列为 $I$，输入序列$I$的逆序列记作 $I_{reverse}$\n令 $r=f(n)$,\n由于，$**g(i)$等价于将 $f(i)$的输入序列$I$ 的逆序 $I_{reverse}$ ，**经由$f(i)$输出得到$r_{reverse}$\n我们记作\n$$g(n) = f_{reverse}(n)$$\n注意到 $\\forall x \\in I, x_{reverse} \\in I_{reverse}, x_{reverse}=n+1-x$\n于是 $r + r_{reverse} = f(n)+g(n) = n+1-x+x=n+1$\n$Q.E.D.$\n 并且，由题意可知，有以下方程组成立：  $$ f(n) = 2\\cdot g(\\left \\lfloor \\frac{n}{2} \\right \\rfloor)\\ $$\n$$ g(n) = 2\\cdot f(\\left \\lfloor \\frac{n}{2} \\right \\rfloor)\\ $$\n$$ f(1) = g(1) = 1 $$\n综上，有 $$ f(n) + g(n) = n+1\\ $$\n$$ \\Rightarrow f(\\left\\lfloor\\frac{n}{2}\\right\\rfloor)+g(\\left\\lfloor\\frac{n}{2}\\right \\rfloor)= \\left\\lfloor\\frac{n}{2}\\right \\rfloor + 1 $$\n由于 $$ f(n)=2\\cdot g(\\left\\lfloor\\frac{n}{2}\\right \\rfloor) $$ 于是得到递归式： $$ f(\\left\\lfloor\\frac{n}{2}\\right \\rfloor) + \\frac{1}{2} f(n) = \\left\\lfloor\\frac{n}{2}\\right \\rfloor + 1 \\ $$ 即\n$$ f(n) =2\\cdot [ \\left \\lfloor \\frac{n}{2} \\right \\rfloor + 1 -f(\\left \\lfloor \\frac{n}{2} \\right \\rfloor) ](*) $$\n由$(*)$可以得到递归代码：\nint lastRemaining(int n) { return n == 1 ? 1 : 2 * (1 + n / 2 - lastRemaining(n / 2)); } ","wordCount":"337","inLanguage":"en","image":"http://xpectuer.github.io/my-blog/%3Cimage%20path/url%3E","datePublished":"0001-01-01T00:00:00Z","dateModified":"0001-01-01T00:00:00Z","author":{"@type":"Person","name":"Noobi"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://xpectuer.github.io/my-blog/posts/leetcode/miscs/390/"},"publisher":{"@type":"Organization","name":"苟利国家生死以，岂因祸福避趋之","logo":{"@type":"ImageObject","url":"https://xpectuer.github.io/my-blog/images/sl.png"}}}</script>
-</head>
-<body id=top>
-<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"LC390.消除游戏","name":"LC390.消除游戏","description":"本题精华在于递推与性质证明","keywords":["algorithm","maths"],"articleBody":"LC390.消除游戏 Created: January 2, 2022 1:46 PM\n 声明：我写的文章只是为了只有一个目的———把方法讲清楚、讲通透。 OJ上很少存在某个人原创的方法，大部分只是对已有的方法的重复。\n ⚠️长度警告\nBrute Force 暴力法 我们先来分析数组手动模拟的不可行性。\n  注意到 $1 \\le n \\le 10^9$。假设每个数 16bit，存放所有中间数需要最多 $16 \\times 10^9$bit 也就是约 2GB！！。\n就算预处理第一轮去除所有奇数，也要1GB。\n要知道一般的OJ平台的上限仅仅是MB级别。因此，显然不可行。\n  我们必须寻求一些数学方法，一个是从数列的角度，一个是从函数的角度。\n数列的角度 从题目的描述来看，我们的输入，无论怎么消除，仅仅只是一串等差数列。\n回顾等差数列的三要素：1. 首项 $a_1$； 2. 公差 $d$； 3. 项数 $n$；\n并有如下公式成立：\n$$a_n = a_1 + (n-1)\\cdot d$$\n因此，就没有必要再存储数列中的每个元素的值了。\n如果把输入看作是一个等差数列 $a^0$。e.g. 1, 2, 3, 4 ,5\n那么，消除第一轮的产生一个新的等差数列 $a^1$。e.g. 2, 4\n那么，消除第二轮的产生一个新的等差数列 $a^2$。e.g. 2\n以此类推，消除$turn$轮产生一个新的等差数列 $a^{turn}$。\n不难看出，每一轮消除过后存在一下差别：\n 公差 $d$ 加倍了 首项 $a_1$ 变了 项数 $n$ 变了  于是我们就要探索一下这三者是怎么变的：\n  对于公差 $d$，无论是从左向右还从右向左消除，都会加倍\n  对于项数 $n$，与公差类似，每次都会减半，准确的说，是$\\left \\lfloor \\frac{n}{2}\\right \\rfloor$ 。\n  首项$a_1$则相对复杂，需要讨论一下消除轮数 $turn$ 与项数$n$的奇偶性。\n注：最好自己拿草稿纸推敲一下\n首先讨论轮数 $turn$，再讨论项数$n$，由于规定起始 $turn = 0$\n 当 $turn$为偶数时，从左向右消除  此时一定有$a_1^{turn} = a_1^{turn-1}+d$   当 $turn$为奇数时，从右向左消除  当且仅当$n$为奇数时，有$a_1^{turn} = a_1^{turn-1}+d$      经过以上讨论，只要把以上的变化翻译成代码，反复迭代，直到$n=1$即可。\nclass Solution { public:  int lastRemaining(int n) {  int turn = 0;  int step = 1;  int cnt = n;  int a_1 = 1;    while(cnt  1) {  if(turn % 2 == 0) { // turn 是偶数 从左向右  a_1 = a_1 + step;  } else { // 从右向左  if(cnt \u0026 1 == 1) a_1 = a_1 + step;  }  step = step  1;  cnt = cnt  1;  turn++;  }  return a_1;  } };  （重点）函数的角度 在做解微分方程的时候，我们希望解出某个函数的解析解（上面的方法就是一个）。\n但是有时候当我们无法得到解析解时，也可以考虑将方程简化，得到一个函数的递推关系。\n定义：$f(n)$是以自左向右开始，间隔一个消除直到只剩一个的元素的函数。\n注：说白了就是题目要求我们写的代码。\n定义：$g(n)$是以自右向做开始，间隔一个消除直到只剩一个的元素的函数。\n 以上的两个函数存在以下性质：  $$f(n)+g(n)= n+1$$\n【证明】\nC 1 line solution with explanation - LeetCode Discuss\n令输入序列为 $I$，输入序列$I$的逆序列记作 $I_{reverse}$\n令 $r=f(n)$,\n由于，$**g(i)$等价于将 $f(i)$的输入序列$I$ 的逆序 $I_{reverse}$ ，**经由$f(i)$输出得到$r_{reverse}$\n我们记作\n$$g(n) = f_{reverse}(n)$$\n注意到 $\\forall x \\in I, x_{reverse} \\in I_{reverse}, x_{reverse}=n+1-x$\n于是 $r + r_{reverse} = f(n)+g(n) = n+1-x+x=n+1$\n$Q.E.D.$\n 并且，由题意可知，有以下方程组成立：  $$ f(n) = 2\\cdot g(\\left \\lfloor \\frac{n}{2} \\right \\rfloor)\\ $$\n$$ g(n) = 2\\cdot f(\\left \\lfloor \\frac{n}{2} \\right \\rfloor)\\ $$\n$$ f(1) = g(1) = 1 $$\n综上，有 $$ f(n) + g(n) = n+1\\ $$\n$$ \\Rightarrow f(\\left\\lfloor\\frac{n}{2}\\right\\rfloor)+g(\\left\\lfloor\\frac{n}{2}\\right \\rfloor)= \\left\\lfloor\\frac{n}{2}\\right \\rfloor + 1 $$\n由于 $$ f(n)=2\\cdot g(\\left\\lfloor\\frac{n}{2}\\right \\rfloor) $$ 于是得到递归式： $$ f(\\left\\lfloor\\frac{n}{2}\\right \\rfloor) + \\frac{1}{2} f(n) = \\left\\lfloor\\frac{n}{2}\\right \\rfloor + 1 \\ $$ 即\n$$ f(n) =2\\cdot [ \\left \\lfloor \\frac{n}{2} \\right \\rfloor + 1 -f(\\left \\lfloor \\frac{n}{2} \\right \\rfloor) ](*) $$\n由$(*)$可以得到递归代码：\nint lastRemaining(int n) {  return n == 1 ? 1 : 2 * (1 + n / 2 - lastRemaining(n / 2)); } ","wordCount":"337","inLanguage":"en","image":"http://xpectuer.github.io/my-blog/%3Cimage%20path/url%3E","datePublished":"0001-01-01T00:00:00Z","dateModified":"0001-01-01T00:00:00Z","author":{"@type":"Person","name":"Noobi"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://xpectuer.github.io/my-blog/posts/leetcode/miscs/390/"},"publisher":{"@type":"Organization","name":"苟利国家生死以，岂因祸福避趋之","logo":{"@type":"ImageObject","url":"https://xpectuer.github.io/my-blog/images/sl.png"}}}</script>
+</head><body id=top>
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script>
 <header class=header>
 <nav class=nav>
 <div class=logo>
@@ -51,39 +46,28 @@
 <button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
 </button>
 </span>
-</div>
-<ul id=menu>
+</div><ul id=menu>
 <li>
 <a href=http://xpectuer.github.io/my-blog/aboutme/ title=关于我>
 <span>关于我</span>
 </a>
-</li>
-<li>
+</li><li>
 <a href=http://xpectuer.github.io/my-blog/tags/ title=标签>
 <span>标签</span>
 </a>
-</li>
-<li>
+</li><li>
 <a href=https://xpectuer.github.io/my-blog title=主页>
 <span>主页</span>
 </a>
-</li>
-</ul>
-</nav>
-</header>
-<main class=main>
+</li></ul></nav></header><main class=main>
 <article class=post-single>
 <header class=post-header>
-<div class=breadcrumbs><a href=http://xpectuer.github.io/my-blog/>Home</a>&nbsp;»&nbsp;<a href=http://xpectuer.github.io/my-blog/posts/>Posts</a></div>
-<h1 class=post-title>
+<div class=breadcrumbs><a href=http://xpectuer.github.io/my-blog/>Home</a>&nbsp;»&nbsp;<a href=http://xpectuer.github.io/my-blog/posts/>Posts</a></div><h1 class=post-title>
 LC390.消除游戏
-</h1>
-<div class=post-description>
+</h1><div class=post-description>
 本题精华在于递推与性质证明
-</div>
-<div class=post-meta>2 min&nbsp;·&nbsp;Noobi&nbsp;|&nbsp;<a href=https://github.com/%3cpath_to_repo%3e/content/posts/leetcode/miscs/390.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
-</div>
-</header> <div class=toc>
+</div><div class=post-meta>2 min&nbsp;·&nbsp;Noobi&nbsp;|&nbsp;<a href=https://github.com/%3cpath_to_repo%3e/content/posts/leetcode/miscs/390.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
+</div></header><div class=toc>
 <details>
 <summary accesskey=c title="(Alt + C)">
 <span class=details>Table of Contents</span>
@@ -93,142 +77,61 @@ LC390.消除游戏
 <a href=#lc390%e6%b6%88%e9%99%a4%e6%b8%b8%e6%88%8f aria-label=LC390.消除游戏>LC390.消除游戏</a><ul>
 <ul>
 <li>
-<a href=#brute-force-%e6%9a%b4%e5%8a%9b%e6%b3%95 aria-label="Brute Force 暴力法">Brute Force 暴力法</a></li>
-<li>
-<a href=#%e6%95%b0%e5%88%97%e7%9a%84%e8%a7%92%e5%ba%a6 aria-label=数列的角度>数列的角度</a></li>
-<li>
+<a href=#brute-force-%e6%9a%b4%e5%8a%9b%e6%b3%95 aria-label="Brute Force 暴力法">Brute Force 暴力法</a></li><li>
+<a href=#%e6%95%b0%e5%88%97%e7%9a%84%e8%a7%92%e5%ba%a6 aria-label=数列的角度>数列的角度</a></li><li>
 <a href=#%e9%87%8d%e7%82%b9%e5%87%bd%e6%95%b0%e7%9a%84%e8%a7%92%e5%ba%a6 aria-label=（重点）函数的角度>（重点）函数的角度</a>
-</li>
-</ul>
-</ul>
-</li>
-</ul>
-</div>
-</details>
-</div>
-<div class=post-content><h1 id=lc390消除游戏>LC390.消除游戏<a hidden class=anchor aria-hidden=true href=#lc390消除游戏>#</a></h1>
-<p>Created: January 2, 2022 1:46 PM</p>
-<blockquote>
+</li></ul></ul></li></ul></div></details>
+</div><div class=post-content><h1 id=lc390消除游戏>LC390.消除游戏<a hidden class=anchor aria-hidden=true href=#lc390消除游戏>#</a></h1><p>Created: January 2, 2022 1:46 PM</p><blockquote>
 <p>声明：我写的文章只是为了只有一个目的———把方法讲清楚、讲通透。
-OJ上很少存在某个人原创的方法，大部分只是对已有的方法的重复。</p>
-</blockquote>
-<p>⚠️长度警告</p>
-<h3 id=brute-force-暴力法>Brute Force 暴力法<a hidden class=anchor aria-hidden=true href=#brute-force-暴力法>#</a></h3>
-<p>我们先来分析数组手动模拟的不可行性。</p>
-<ul>
+OJ上很少存在某个人原创的方法，大部分只是对已有的方法的重复。</p></blockquote><p>⚠️长度警告</p><h3 id=brute-force-暴力法>Brute Force 暴力法<a hidden class=anchor aria-hidden=true href=#brute-force-暴力法>#</a></h3><p>我们先来分析数组手动模拟的不可行性。</p><ul>
 <li>
-<p>注意到 $1 \le n \le 10^9$。假设每个数 16bit，存放所有中间数需要最多 $16 \times 10^9$bit 也就是约 <strong>2GB！！</strong>。</p>
-<p>就算预处理第一轮去除所有奇数，也要1GB。</p>
-<p>要知道一般的OJ平台的上限仅仅是MB级别。因此，显然不可行。</p>
-</li>
-</ul>
-<p>我们必须寻求一些数学方法，一个是从数列的角度，一个是从函数的角度。</p>
-<h3 id=数列的角度>数列的角度<a hidden class=anchor aria-hidden=true href=#数列的角度>#</a></h3>
-<p>从题目的描述来看，我们的输入，无论怎么消除，仅仅只是一串<strong>等差数列</strong>。</p>
-<p>回顾<strong>等差数列</strong>的三要素：<strong>1.</strong> 首项 $a_1$； <strong>2.</strong> 公差 $d$； <strong>3.</strong> 项数 $n$；</p>
-<p>并有如下公式成立：</p>
-<p>$$a_n = a_1 + (n-1)\cdot d$$</p>
-<p>因此，<strong>就没有必要</strong>再存储数列中的每个元素的值了。</p>
-<p>如果把输入看作是一个<strong>等差数列 $a^0$。e.g. <code>1, 2, 3, 4 ,5</code></strong></p>
-<p>那么，消除第一轮的产生一个<strong>新的等差数列 $a^1$。e.g. <code>2, 4</code></strong></p>
-<p>那么，消除第二轮的产生一个<strong>新的等差数列 $a^2$。e.g. <code>2</code></strong></p>
-<p>以此类推，消除$turn$轮产生一个新的等差数列 $a^{turn}$。</p>
-<p>不难看出，每一轮消除过后存在一下差别：</p>
-<ol>
-<li><strong>公差 $d$</strong> 加倍了</li>
-<li><strong>首项 $a_1$</strong> 变了</li>
-<li><strong>项数 $n$</strong> 变了</li>
-</ol>
-<p>于是我们就要<strong>探索</strong>一下这三者是怎么变的：</p>
-<ol>
+<p>注意到 $1 \le n \le 10^9$。假设每个数 16bit，存放所有中间数需要最多 $16 \times 10^9$bit 也就是约 <strong>2GB！！</strong>。</p><p>就算预处理第一轮去除所有奇数，也要1GB。</p><p>要知道一般的OJ平台的上限仅仅是MB级别。因此，显然不可行。</p></li></ul><p>我们必须寻求一些数学方法，一个是从数列的角度，一个是从函数的角度。</p><h3 id=数列的角度>数列的角度<a hidden class=anchor aria-hidden=true href=#数列的角度>#</a></h3><p>从题目的描述来看，我们的输入，无论怎么消除，仅仅只是一串<strong>等差数列</strong>。</p><p>回顾<strong>等差数列</strong>的三要素：<strong>1.</strong> 首项 $a_1$； <strong>2.</strong> 公差 $d$； <strong>3.</strong> 项数 $n$；</p><p>并有如下公式成立：</p><p>$$a_n = a_1 + (n-1)\cdot d$$</p><p>因此，<strong>就没有必要</strong>再存储数列中的每个元素的值了。</p><p>如果把输入看作是一个<strong>等差数列 $a^0$。e.g. <code>1, 2, 3, 4 ,5</code></strong></p><p>那么，消除第一轮的产生一个<strong>新的等差数列 $a^1$。e.g. <code>2, 4</code></strong></p><p>那么，消除第二轮的产生一个<strong>新的等差数列 $a^2$。e.g. <code>2</code></strong></p><p>以此类推，消除$turn$轮产生一个新的等差数列 $a^{turn}$。</p><p>不难看出，每一轮消除过后存在一下差别：</p><ol>
+<li><strong>公差 $d$</strong> 加倍了</li><li><strong>首项 $a_1$</strong> 变了</li><li><strong>项数 $n$</strong> 变了</li></ol><p>于是我们就要<strong>探索</strong>一下这三者是怎么变的：</p><ol>
 <li>
-<p>对于公差 $d$，无论是从左向右还从右向左消除，都会加倍</p>
-</li>
-<li>
-<p>对于项数 $n$，与公差类似，每次都会减半，准确的说，是$\left \lfloor \frac{n}{2}\right \rfloor$ 。</p>
-</li>
-<li>
-<p>首项$a_1$则相对复杂，需要讨论一下<strong>消除轮数</strong> $turn$ 与<strong>项数</strong>$n$的<strong>奇偶性</strong>。</p>
-<p><em>注：最好自己拿草稿纸推敲一下</em></p>
-<p>首先讨论<strong>轮数</strong> $turn$，再讨论项数$n$，由于规定起始 $turn = 0$</p>
-<ul>
+<p>对于公差 $d$，无论是从左向右还从右向左消除，都会加倍</p></li><li>
+<p>对于项数 $n$，与公差类似，每次都会减半，准确的说，是$\left \lfloor \frac{n}{2}\right \rfloor$ 。</p></li><li>
+<p>首项$a_1$则相对复杂，需要讨论一下<strong>消除轮数</strong> $turn$ 与<strong>项数</strong>$n$的<strong>奇偶性</strong>。</p><p><em>注：最好自己拿草稿纸推敲一下</em></p><p>首先讨论<strong>轮数</strong> $turn$，再讨论项数$n$，由于规定起始 $turn = 0$</p><ul>
 <li>当 $turn$为偶数时，从左向右消除
 <ul>
-<li>此时一定有$a_1^{turn} = a_1^{turn-1}+d$</li>
-</ul>
-</li>
-<li>当 $turn$为奇数时，从右向左消除
+<li>此时一定有$a_1^{turn} = a_1^{turn-1}+d$</li></ul></li><li>当 $turn$为奇数时，从右向左消除
 <ul>
-<li>当且仅当$n$为奇数时，有$a_1^{turn} = a_1^{turn-1}+d$</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<p>经过以上讨论，只要把以上的变化翻译成代码，反复迭代，直到$n=1$即可。</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-C++ data-lang=C++><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Solution</span> {
-<span style=color:#66d9ef>public</span><span style=color:#f92672>:</span>
-    <span style=color:#66d9ef>int</span> lastRemaining(<span style=color:#66d9ef>int</span> n) {
-        <span style=color:#66d9ef>int</span> turn <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
-        <span style=color:#66d9ef>int</span> step <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>;
-        <span style=color:#66d9ef>int</span> cnt <span style=color:#f92672>=</span> n;
-        <span style=color:#66d9ef>int</span> a_1 <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>;
-        
-        
-        <span style=color:#66d9ef>while</span>(cnt <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>1</span>) {
-            <span style=color:#66d9ef>if</span>(turn <span style=color:#f92672>%</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>) { <span style=color:#75715e>// turn 是偶数 从左向右
-</span><span style=color:#75715e></span>                a_1 <span style=color:#f92672>=</span> a_1 <span style=color:#f92672>+</span> step;
-            } <span style=color:#66d9ef>else</span> { <span style=color:#75715e>// 从右向左
-</span><span style=color:#75715e></span>                <span style=color:#66d9ef>if</span>(cnt <span style=color:#f92672>&amp;</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>) a_1 <span style=color:#f92672>=</span> a_1 <span style=color:#f92672>+</span> step;
-            }
-            step <span style=color:#f92672>=</span> step <span style=color:#f92672>&lt;&lt;</span> <span style=color:#ae81ff>1</span>;
-            cnt <span style=color:#f92672>=</span> cnt <span style=color:#f92672>&gt;&gt;</span> <span style=color:#ae81ff>1</span>;
-            turn<span style=color:#f92672>++</span>;
-        }      
-        <span style=color:#66d9ef>return</span> a_1;
-    }
-};
-</code></pre></div><hr>
-<h3 id=重点函数的角度>（重点）函数的角度<a hidden class=anchor aria-hidden=true href=#重点函数的角度>#</a></h3>
-<p>在做<strong>解微分方程</strong>的时候，我们希望解出某个函数的<strong>解析解</strong>（上面的方法就是一个）。</p>
-<p>但是有时候当我们<strong>无法得到解析解</strong>时，也可以考虑将<strong>方程简化，得到一个函数的递推关系</strong>。</p>
-<p>定义：$f(n)$是以自左向右开始，间隔一个消除直到只剩一个的元素的函数。</p>
-<p>注：说白了就是题目要求我们写的代码。</p>
-<p>定义：$g(n)$是以自右向做开始，间隔一个消除直到只剩一个的元素的函数。</p>
-<ul>
-<li>以上的两个函数存在以下性质：</li>
-</ul>
-<p>$$f(n)+g(n)= n+1$$</p>
-<p>【证明】</p>
-<p><a href=https://leetcode.com/problems/elimination-game/discuss/87128/C-1-line-solution-with-explanation/91937>C 1 line solution with explanation - LeetCode Discuss</a></p>
-<p>令输入序列为 $I$，输入序列$I$的逆序列记作 $I_{reverse}$</p>
-<p>令 $r=f(n)$,</p>
-<p>由于，$**g(i)$等价于将 $f(i)$<strong>的输入序列$I$ 的</strong>逆序 $I_{reverse}$ ，**经由$f(i)$输出得到$r_{reverse}$</p>
-<p>我们记作</p>
-<p>$$g(n) = f_{reverse}(n)$$</p>
-<p>注意到 $\forall x \in I, x_{reverse} \in I_{reverse}, x_{reverse}=n+1-x$</p>
-<p>于是 $r + r_{reverse} = f(n)+g(n) = n+1-x+x=n+1$</p>
-<p>$Q.E.D.$</p>
-<ul>
-<li>并且，由题意可知，有以下方程组成立：</li>
-</ul>
-<p>$$
+<li>当且仅当$n$为奇数时，有$a_1^{turn} = a_1^{turn-1}+d$</li></ul></li></ul></li></ol><p>经过以上讨论，只要把以上的变化翻译成代码，反复迭代，直到$n=1$即可。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-C++ data-lang=C++><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Solution</span> {
+</span></span><span style=display:flex><span><span style=color:#66d9ef>public</span><span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> lastRemaining(<span style=color:#66d9ef>int</span> n) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>int</span> turn <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>int</span> step <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>;
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>int</span> cnt <span style=color:#f92672>=</span> n;
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>int</span> a_1 <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>;
+</span></span><span style=display:flex><span>        
+</span></span><span style=display:flex><span>        
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>while</span>(cnt <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>1</span>) {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span>(turn <span style=color:#f92672>%</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>) { <span style=color:#75715e>// turn 是偶数 从左向右
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>                a_1 <span style=color:#f92672>=</span> a_1 <span style=color:#f92672>+</span> step;
+</span></span><span style=display:flex><span>            } <span style=color:#66d9ef>else</span> { <span style=color:#75715e>// 从右向左
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>                <span style=color:#66d9ef>if</span>(cnt <span style=color:#f92672>&amp;</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span>) a_1 <span style=color:#f92672>=</span> a_1 <span style=color:#f92672>+</span> step;
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>            step <span style=color:#f92672>=</span> step <span style=color:#f92672>&lt;&lt;</span> <span style=color:#ae81ff>1</span>;
+</span></span><span style=display:flex><span>            cnt <span style=color:#f92672>=</span> cnt <span style=color:#f92672>&gt;&gt;</span> <span style=color:#ae81ff>1</span>;
+</span></span><span style=display:flex><span>            turn<span style=color:#f92672>++</span>;
+</span></span><span style=display:flex><span>        }      
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> a_1;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>};
+</span></span></code></pre></div><hr>
+<h3 id=重点函数的角度>（重点）函数的角度<a hidden class=anchor aria-hidden=true href=#重点函数的角度>#</a></h3><p>在做<strong>解微分方程</strong>的时候，我们希望解出某个函数的<strong>解析解</strong>（上面的方法就是一个）。</p><p>但是有时候当我们<strong>无法得到解析解</strong>时，也可以考虑将<strong>方程简化，得到一个函数的递推关系</strong>。</p><p>定义：$f(n)$是以自左向右开始，间隔一个消除直到只剩一个的元素的函数。</p><p>注：说白了就是题目要求我们写的代码。</p><p>定义：$g(n)$是以自右向做开始，间隔一个消除直到只剩一个的元素的函数。</p><ul>
+<li>以上的两个函数存在以下性质：</li></ul><p>$$f(n)+g(n)= n+1$$</p><p>【证明】</p><p><a href=https://leetcode.com/problems/elimination-game/discuss/87128/C-1-line-solution-with-explanation/91937>C 1 line solution with explanation - LeetCode Discuss</a></p><p>令输入序列为 $I$，输入序列$I$的逆序列记作 $I_{reverse}$</p><p>令 $r=f(n)$,</p><p>由于，$**g(i)$等价于将 $f(i)$<strong>的输入序列$I$ 的</strong>逆序 $I_{reverse}$ ，**经由$f(i)$输出得到$r_{reverse}$</p><p>我们记作</p><p>$$g(n) = f_{reverse}(n)$$</p><p>注意到 $\forall x \in I, x_{reverse} \in I_{reverse}, x_{reverse}=n+1-x$</p><p>于是 $r + r_{reverse} = f(n)+g(n) = n+1-x+x=n+1$</p><p>$Q.E.D.$</p><ul>
+<li>并且，由题意可知，有以下方程组成立：</li></ul><p>$$
 f(n) = 2\cdot g(\left \lfloor \frac{n}{2} \right \rfloor)\
-$$</p>
-<p>$$
+$$</p><p>$$
 g(n) = 2\cdot f(\left \lfloor \frac{n}{2} \right \rfloor)\
-$$</p>
-<p>$$
+$$</p><p>$$
 f(1) = g(1) = 1
-$$</p>
-<p>综上，有
+$$</p><p>综上，有
 $$
 f(n) + g(n) = n+1\
-$$</p>
-<p>$$
+$$</p><p>$$
 \Rightarrow f(\left\lfloor\frac{n}{2}\right\rfloor)+g(\left\lfloor\frac{n}{2}\right \rfloor)= \left\lfloor\frac{n}{2}\right \rfloor + 1
-$$</p>
-<p>由于
+$$</p><p>由于
 $$
 f(n)=2\cdot g(\left\lfloor\frac{n}{2}\right \rfloor)
 $$
@@ -236,43 +139,29 @@ $$
 $$
 f(\left\lfloor\frac{n}{2}\right \rfloor) + \frac{1}{2} f(n) = \left\lfloor\frac{n}{2}\right \rfloor + 1 \
 $$
-即</p>
-<p>$$
+即</p><p>$$
 f(n) =2\cdot [ \left \lfloor \frac{n}{2} \right \rfloor + 1 -f(\left \lfloor \frac{n}{2} \right \rfloor) ](*)
-$$</p>
-<p>由$(*)$可以得到递归代码：</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>lastRemaining</span>(<span style=color:#66d9ef>int</span> n) {
-    <span style=color:#66d9ef>return</span> n <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>?</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>:</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>*</span> (<span style=color:#ae81ff>1</span> <span style=color:#f92672>+</span> n <span style=color:#f92672>/</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>-</span> lastRemaining(n <span style=color:#f92672>/</span> <span style=color:#ae81ff>2</span>));
-}
-</code></pre></div>
-</div>
-<footer class=post-footer>
+$$</p><p>由$(*)$可以得到递归代码：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>lastRemaining</span>(<span style=color:#66d9ef>int</span> n) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> n <span style=color:#f92672>==</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>?</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>:</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>*</span> (<span style=color:#ae81ff>1</span> <span style=color:#f92672>+</span> n <span style=color:#f92672>/</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>-</span> lastRemaining(n <span style=color:#f92672>/</span> <span style=color:#ae81ff>2</span>));
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div></div><footer class=post-footer>
 <ul class=post-tags>
-<li><a href=http://xpectuer.github.io/my-blog/tags/algorithm/>algorithm</a></li>
-<li><a href=http://xpectuer.github.io/my-blog/tags/maths/>maths</a></li>
-</ul>
-<nav class=paginav>
+<li><a href=http://xpectuer.github.io/my-blog/tags/algorithm/>algorithm</a></li><li><a href=http://xpectuer.github.io/my-blog/tags/maths/>maths</a></li></ul><nav class=paginav>
 <a class=prev href=http://xpectuer.github.io/my-blog/posts/compilers/static-analysis/data-flow-analysis/data-flow-anlaysis-applications/>
 <span class=title>« Prev Page</span>
 <br>
 <span>【软件分析笔记】数据流分析：应用篇</span>
 </a>
-</nav>
-</footer>
-</article>
-</main>
-<footer class=footer>
+</nav></footer></article></main><footer class=footer>
 <span>&copy; 2022 <a href=http://xpectuer.github.io/my-blog/>苟利国家生死以，岂因祸福避趋之</a></span>
 <span>
 Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
 </span>
-</footer>
-<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
 </a>
-<script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})})</script>
 <script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
-<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
-</body>
-</html>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script>
+</body></html>
