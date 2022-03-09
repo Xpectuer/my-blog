@@ -21,6 +21,7 @@ searchHidden: true
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
+mathjax: true
 
 
 cover:
