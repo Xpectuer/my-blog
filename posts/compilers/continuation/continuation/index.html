@@ -1,0 +1,125 @@
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>Continuation | 苟利国家生死以，岂因祸福避趋之</title><meta name=keywords content="programming language">
+<meta name=description content="Desc Text.">
+<meta name=author content="Noobi">
+<link rel=canonical href=https://canonical.url/to/page>
+<meta name=google-site-verification content="XYZabc">
+<meta name=yandex-verification content="XYZabc">
+<meta name=msvalidate.01 content="XYZabc">
+<link crossorigin=anonymous href=/my-blog/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css integrity="sha256-yIlj/i15RiAA/Q+xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as=style>
+<link rel=preload href=https://xpectuer.github.io/my-blog/images/sl.png as=image>
+<script defer crossorigin=anonymous src=/my-blog/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://xpectuer.github.io/my-blog/images/sl.png>
+<link rel=icon type=image/png sizes=16x16 href=http://xpectuer.github.io/my-blog/%3Clink%20/%20abs%20url%3E>
+<link rel=icon type=image/png sizes=32x32 href=http://xpectuer.github.io/my-blog/%3Clink%20/%20abs%20url%3E>
+<link rel=apple-touch-icon href=http://xpectuer.github.io/my-blog/%3Clink%20resources/_gen/images/dio.webp%3E>
+<link rel=mask-icon href=http://xpectuer.github.io/my-blog/%3Clink%20/%20abs%20url%3E>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.93.3">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script type=text/javascript async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"]],processEscapes:!0,processEnvironments:!0,skipTags:["script","noscript","style","textarea","pre"],TeX:{equationNumbers:{autoNumber:"AMS"},extensions:["AMSmath.js","AMSsymbols.js"]}}}),MathJax.Hub.Queue(function(){var t=MathJax.Hub.getAllJax(),e;for(e=0;e<t.length;e+=1)t[e].SourceElement().parentNode.className+=" has-jax"}),MathJax.Hub.Config({TeX:{equationNumbers:{autoNumber:"AMS"}}})</script>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,o,i,a,t,n,s){e.GoogleAnalyticsObject=t,e[t]=e[t]||function(){(e[t].q=e[t].q||[]).push(arguments)},e[t].l=1*new Date,n=o.createElement(i),s=o.getElementsByTagName(i)[0],n.async=1,n.src=a,s.parentNode.insertBefore(n,s)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-123-45","auto"),ga("send","pageview"))</script><meta property="og:title" content="Continuation">
+<meta property="og:description" content="Desc Text.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://xpectuer.github.io/my-blog/posts/compilers/continuation/continuation/">
+<meta property="og:image" content="http://xpectuer.github.io/my-blog/%3Cimage%20path/url%3E"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2022-03-08T11:30:03+00:00">
+<meta property="article:modified_time" content="2022-03-08T11:30:03+00:00"><meta property="og:site_name" content="苟利国家生死以，岂因祸福避趋之">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="http://xpectuer.github.io/my-blog/%3Cimage%20path/url%3E">
+<meta name=twitter:title content="Continuation">
+<meta name=twitter:description content="Desc Text.">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"http://xpectuer.github.io/my-blog/posts/"},{"@type":"ListItem","position":2,"name":"Continuation","item":"http://xpectuer.github.io/my-blog/posts/compilers/continuation/continuation/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Continuation","name":"Continuation","description":"Desc Text.","keywords":["programming language"],"articleBody":"续体 Continuation  英国作家叶芝说：“教育不是注满一桶水，而是点燃一把火。”\n但是你必须先“给桶注一点水“。\n——-《Operating System: Three Easy Pieces》\n 对于我这样一个PL门外汉来说，读王垠的博客可以用丰收（Harvest）来形容。\n如同普罗米修斯为无知的人类带来智慧的火焰，引导人们向未知前进。\n很多人说，难以理解Python的generator，难以理解Coroutine。\n然而，在我们理解了续体后，一切都迎刃而解，generator不过就是Python团队空造出来的概念罢了；我们甚至可以利用这个概念，构造一个区别于Unix线程概念的操作系统（基于Coroutine的系统）。\n什么是续体（Continuation） 任何的过程（procedure）都可以被抽象成一个自动机（Automata）。\n过程的组成无非几点：\n （输入）/输出 一系列动作（$state_A \\rightarrow state_B$） 一系列状态（$state_A,state_B,…,state_N$）  每个过程又被所谓的帧（Frame）包装，以便保存一些状态。\n过程具有一个性质：一旦返回，内部的状态不留存。\n例如，有如下C函数:\nint foo(int a) { \tint b = a + 1; \treturn b; } 当函数返回时，b的值被返回出来，但是b不复存在。\n 如同插座一样，插头插入电源，电流流出，但插座里面的铁片还在原地。\n 于是，过程调用者（Caller）的状态可以被一种LIFO的结构，即栈结构保存。\n然而，如果人们的认知止步于此，如同人们如果只甘心将数域扩充到有理数，无穷之谜无从解答，解析几何将烟消云散，微积分将失去基石，于是现代物理无从发展…直到计算机也无法发展，阁下将没有机会看到这篇文章 ;(\n回归正题，与希帕索斯提出$\\sqrt 2$ 一样，有人提出疑问，为什么一个”过程“非得返回就退出了？\n如果您玩过电子游戏，直觉会告诉我们，电子游戏暂停之后，怪物们似乎并没有消失或是停止攻击动作…\n类比过程，我能否让一个”过程“执行了一半然后先返回？\n于是，“续体”的概念被扩充了出来，它是“过程”的泛化（generalization）。\n看下面这段python代码：\ndef foo(): \ti = 0\t\tfor j in range(5): \tyield i; \ti = i + 1\t如果我调用它一次，它只会返回一个值（我不打算解释generator，因为那不重要）。\n由于Python generator的机制，我需要利用迭代的方式函数才能得到每个返回值。\nfor i in foo(): \tprint(i)  # outputs: 0 1 2 3 4 实际上，每次循环的时候，都调用了一次foo() 。\n然而，从输出明显可以看到，显然foo() 保留了上一次调用的状态（不然i就不会加1了）。\n这就是续体的概念，与函数很像，但是它在返回时依然保存自己的状态，如同被“冻结”了一般。\n总结 总结一下，过程在返回时，内部的状态不再留存；\n而为了更加通用的目的，人们将这个性质出发，扩充出了“续体（continuation）”的概念。\n从定义角度出发，“续体”是“过程”的超集，即“过程”是特殊的“续体”（不需要保存状态）。\n","wordCount":"89","inLanguage":"en","image":"http://xpectuer.github.io/my-blog/%3Cimage%20path/url%3E","datePublished":"2022-03-08T11:30:03Z","dateModified":"2022-03-08T11:30:03Z","author":{"@type":"Person","name":"Noobi"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://xpectuer.github.io/my-blog/posts/compilers/continuation/continuation/"},"publisher":{"@type":"Organization","name":"苟利国家生死以，岂因祸福避趋之","logo":{"@type":"ImageObject","url":"https://xpectuer.github.io/my-blog/images/sl.png"}}}</script>
+</head><body id=top>
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=http://xpectuer.github.io/my-blog/ accesskey=h title="具体问题，具体分析是马克思主义活的灵魂 (Alt + H)">
+<img src=https://xpectuer.github.io/my-blog/images/sl.png alt=logo aria-label=logo height=35>具体问题，具体分析是马克思主义活的灵魂</a>
+<span class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</span>
+</div><ul id=menu>
+<li>
+<a href=http://xpectuer.github.io/my-blog/aboutme/ title=关于我>
+<span>关于我</span>
+</a>
+</li><li>
+<a href=http://xpectuer.github.io/my-blog/tags/ title=标签>
+<span>标签</span>
+</a>
+</li><li>
+<a href=https://xpectuer.github.io/my-blog title=主页>
+<span>主页</span>
+</a>
+</li></ul></nav></header><main class=main>
+<article class=post-single>
+<header class=post-header>
+<div class=breadcrumbs><a href=http://xpectuer.github.io/my-blog/>Home</a>&nbsp;»&nbsp;<a href=http://xpectuer.github.io/my-blog/posts/>Posts</a></div><h1 class=post-title>
+Continuation
+</h1><div class=post-description>
+Desc Text.
+</div><div class=post-meta><span title="2022-03-08 11:30:03 +0000 UTC">March 8, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Noobi&nbsp;|&nbsp;<a href=https://github.com/Xpectuer/my-blog/content/posts/compilers/continuation/continuation.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
+</div></header><div class=toc>
+<details>
+<summary accesskey=c title="(Alt + C)">
+<span class=details>Table of Contents</span>
+</summary>
+<div class=inner><ul>
+<li>
+<a href=#%e7%bb%ad%e4%bd%93-continuation aria-label="续体 Continuation">续体 Continuation</a><ul>
+<ul>
+<li>
+<a href=#%e4%bb%80%e4%b9%88%e6%98%af%e7%bb%ad%e4%bd%93continuation aria-label=什么是续体（Continuation）>什么是续体（Continuation）</a></li><li>
+<a href=#%e6%80%bb%e7%bb%93 aria-label=总结>总结</a>
+</li></ul></ul></li></ul></div></details>
+</div><div class=post-content><h1 id=续体-continuation>续体 Continuation<a hidden class=anchor aria-hidden=true href=#续体-continuation>#</a></h1><blockquote>
+<p>英国作家叶芝说：“教育不是注满一桶水，而是点燃一把火。”</p><p>但是你必须先“给桶注一点水“。</p><p>&mdash;&mdash;-《Operating System: Three Easy Pieces》</p></blockquote><p>对于我这样一个PL门外汉来说，读王垠的博客可以用丰收（Harvest）来形容。</p><p>如同普罗米修斯为无知的人类带来智慧的火焰，引导人们向未知前进。</p><p>很多人说，难以理解Python的generator，难以理解Coroutine。</p><p>然而，在我们理解了续体后，一切都迎刃而解，generator不过就是Python团队空造出来的概念罢了；我们甚至可以利用这个概念，构造一个区别于Unix线程概念的操作系统（基于Coroutine的系统）。</p><h3 id=什么是续体continuation>什么是续体（Continuation）<a hidden class=anchor aria-hidden=true href=#什么是续体continuation>#</a></h3><p>任何的<strong>过程</strong>（procedure）都可以被抽象成一个<strong>自动机</strong>（Automata）。</p><p>过程的组成无非几点：</p><ol>
+<li>（输入）/输出</li><li>一系列动作（$state_A \rightarrow state_B$）</li><li>一系列状态（$state_A,state_B,&mldr;,state_N$）</li></ol><p>每个过程又被所谓的帧（Frame）包装，以便保存一些状态。</p><p>过程具有一个性质：<strong><u>一旦返回，内部的状态不留存。</u></strong></p><p>例如，有如下C函数:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>foo</span><span style=color:#f92672>(</span><span style=color:#66d9ef>int</span> a<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>int</span> b <span style=color:#f92672>=</span> a <span style=color:#f92672>+</span> 1<span style=color:#f92672>;</span>
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>return</span> b<span style=color:#f92672>;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span></code></pre></div><p>当函数返回时，<code>b</code>的值被返回出来，但是<code>b</code>不复存在。</p><blockquote>
+<p>如同插座一样，插头插入电源，电流流出，但插座里面的铁片还在原地。</p></blockquote><p>于是，过程调用者（Caller）的状态可以被一种LIFO的结构，即栈结构保存。</p><p>然而，如果人们的认知止步于此，如同人们如果只甘心将数域扩充到有理数，无穷之谜无从解答，解析几何将烟消云散，微积分将失去基石，于是现代物理无从发展&mldr;直到计算机也无法发展，阁下将没有机会看到这篇文章 ;(</p><p>回归正题，与<strong>希帕索斯提出$\sqrt 2$ 一样</strong>，有人提出疑问，为什么一个”过程“非得返回就退出了？</p><p>如果您玩过电子游戏，直觉会告诉我们，电子游戏暂停之后，怪物们似乎并没有消失或是停止攻击动作&mldr;</p><p>类比过程，我能否让一个”过程“执行了一半然后先返回？</p><p>于是，“续体”的概念被扩充了出来，它是“过程”的泛化（generalization）。</p><p>看下面这段python代码：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>foo</span>():
+</span></span><span style=display:flex><span>	i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>	
+</span></span><span style=display:flex><span>	<span style=color:#66d9ef>for</span> j <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>5</span>):
+</span></span><span style=display:flex><span>		<span style=color:#66d9ef>yield</span> i;
+</span></span><span style=display:flex><span>		i <span style=color:#f92672>=</span> i <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>		
+</span></span></code></pre></div><p>如果我调用它一次，它只会返回一个值（我不打算解释generator，因为那不重要）。</p><p>由于Python generator的机制，我需要利用迭代的方式函数才能得到每个返回值。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> foo():
+</span></span><span style=display:flex><span>	print(i)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># outputs:</span>
+</span></span><span style=display:flex><span><span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span><span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span><span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span><span style=color:#ae81ff>3</span>
+</span></span><span style=display:flex><span><span style=color:#ae81ff>4</span>
+</span></span></code></pre></div><p>实际上，每次循环的时候，都调用了一次<code>foo()</code> 。</p><p>然而，从输出明显可以看到，显然<code>foo()</code> <strong>保留了上一次调用的状态</strong>（不然<code>i</code>就不会加1了）。</p><p>这就是续体的概念，与函数很像，但是它在返回时依然保存自己的状态，如同被“冻结”了一般。</p><h3 id=总结>总结<a hidden class=anchor aria-hidden=true href=#总结>#</a></h3><p>总结一下，过程在返回时，内部的状态不再留存；</p><p>而为了更加通用的目的，人们将这个性质出发，扩充出了“续体（continuation）”的概念。</p><p>从定义角度出发，“续体”是“过程”的超集，即“过程”是特殊的“续体”（不需要保存状态）。</p></div><footer class=post-footer>
+<ul class=post-tags>
+<li><a href=http://xpectuer.github.io/my-blog/tags/programming-language/>programming language</a></li></ul><nav class=paginav>
+<a class=next href=http://xpectuer.github.io/my-blog/posts/compilers/java/java-value-type/java_value_type/>
+<span class=title>Next Page »</span>
+<br>
+<span>【碎碎念】读《Java有值类型吗？》有感</span>
+</a>
+</nav></footer></article></main><footer class=footer>
+<span>&copy; 2022 <a href=http://xpectuer.github.io/my-blog/>苟利国家生死以，岂因祸福避趋之</a></span>
+<span>
+Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a>
+<script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script>
+</body></html>
