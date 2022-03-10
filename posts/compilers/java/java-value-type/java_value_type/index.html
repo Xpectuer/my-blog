@@ -11,9 +11,9 @@
 <meta name=yandex-verification content="XYZabc">
 <meta name=msvalidate.01 content="XYZabc">
 <link crossorigin=anonymous href=/my-blog/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css integrity="sha256-yIlj/i15RiAA/Q+xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as=style>
-<link rel=preload href=https://xpectuer.github.io/my-blog/images/sl.png as=image>
+<link rel=preload href=https://jiayezheng.tech/images/sl.png as=image>
 <script defer crossorigin=anonymous src=/my-blog/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI=" onload=hljs.initHighlightingOnLoad()></script>
-<link rel=icon href=https://xpectuer.github.io/my-blog/images/sl.png>
+<link rel=icon href=https://jiayezheng.tech/images/sl.png>
 <link rel=icon type=image/png sizes=16x16 href=http://xpectuer.github.io/my-blog/%3Clink%20/%20abs%20url%3E>
 <link rel=icon type=image/png sizes=32x32 href=http://xpectuer.github.io/my-blog/%3Clink%20/%20abs%20url%3E>
 <link rel=apple-touch-icon href=http://xpectuer.github.io/my-blog/%3Clink%20resources/_gen/images/dio.webp%3E>
@@ -34,14 +34,14 @@
 <meta name=twitter:title content="【碎碎念】读《Java有值类型吗？》有感">
 <meta name=twitter:description content="Java真的全是引用！！！">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"http://xpectuer.github.io/my-blog/posts/"},{"@type":"ListItem","position":2,"name":"【碎碎念】读《Java有值类型吗？》有感","item":"http://xpectuer.github.io/my-blog/posts/compilers/java/java-value-type/java_value_type/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"【碎碎念】读《Java有值类型吗？》有感","name":"【碎碎念】读《Java有值类型吗？》有感","description":"Java真的全是引用！！！","keywords":["programming languages"],"articleBody":"观点： 通过实现“值类型”，实现inline优化，又不改变Java全是引用类型的语义。\n论据 思想实验：\nint x = 1; // x指向内存地址A，内容是整数1 int y = x; // （记住这个y） y指向同样的内存地址A，内容是整数1 x = 2; // x指向另一个内存地址B，内容是整数2。y仍然指向地址A，内容是1。 System.out.println(x); System.out.println(y);  // out: // 可以看到 // 2 // 1   引用类型特有那些操作？\n dereference；例如C中*a struct的分量访问和修改；例如，C中的a.foo = 1  而对于「基本类型」，以上操作均不能实现。\n前者由于Java不提供；后者由于「基本类型」不是复合类型，也就无法实现。\n  引用= 的语义？\n 将引用绑定给一个新的对象。    那么我们的「基本类型」能做什么事情？\n 读取它的值 修改它的值  那么，实际上，值类型的实现和引用类型的实现本质上的结果完全一致。\n  由此得出结论，对于「基本类型」，值类型和引用类型等价。\n对这篇文章的疑惑 语义上，我们难道不是按照值类型的语义来传递参数的吗？\n难道按照引用传递，不属于引用类型的语义吗？\npublic void test() throws Exception{  int x = 2;  foo(x); // 传递了值  System.out.println(x);  }  public static void foo(int x) {  x = 3; }  // out: // 可以看见传递了值 // 2 参数传递的语义？ 值传递：将值拷贝一份绑定给参数。\n引用传递：将地址拷贝一份绑定给参数。\n实际上无需大费周章再证明一遍。\n注意我阐述的，不是放进参数列表（如果这么表述容易产生思维误区），而是绑定给参数。\n那么参数，可以看作是「论据」中的y，「论据」的一切论述足以解释这个问题。\n思考题 有人指出，Java 的引用类型可以是 null，而原始类型不行，所以引用类型和值类型还是有区别的。但是其实这并不能否认本文指出的观点，你可以想想这是为什么吗？\n可能的解答：\n首先，这是一种边界条件：\n 引用类型：我们只要同意：null值对应指向0x0的地址。 值类型：Java对于基本类型有初始化置零操作。比如，int 类型的零值为0 。  于是可以发现，对于「基本类型」，两种语义的确重合。\n总结 思考这种基本问题，不能保证百分百有用，却有一种「明辨是非」的快乐。\n我的感悟：\n 即使是简单问题，也可以有严谨的讨论。不失为一次警示大脑的机会。 在寻求答案过程中，甚至还能发现被一些“不求甚解”的前人扭曲的解释。 思想实验的方法，可以很好地带动直觉论证一些结论。  REF Yin Wang - Java 有值类型吗？\n","wordCount":"109","inLanguage":"en","datePublished":"2022-02-13T04:20:03Z","dateModified":"2022-02-13T04:20:03Z","author":{"@type":"Person","name":"Noobi"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://xpectuer.github.io/my-blog/posts/compilers/java/java-value-type/java_value_type/"},"publisher":{"@type":"Organization","name":"苟利国家生死以，岂因祸福避趋之","logo":{"@type":"ImageObject","url":"https://xpectuer.github.io/my-blog/images/sl.png"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"【碎碎念】读《Java有值类型吗？》有感","name":"【碎碎念】读《Java有值类型吗？》有感","description":"Java真的全是引用！！！","keywords":["programming languages"],"articleBody":"观点： 通过实现“值类型”，实现inline优化，又不改变Java全是引用类型的语义。\n论据 思想实验：\nint x = 1; // x指向内存地址A，内容是整数1 int y = x; // （记住这个y） y指向同样的内存地址A，内容是整数1 x = 2; // x指向另一个内存地址B，内容是整数2。y仍然指向地址A，内容是1。 System.out.println(x); System.out.println(y);  // out: // 可以看到 // 2 // 1   引用类型特有那些操作？\n dereference；例如C中*a struct的分量访问和修改；例如，C中的a.foo = 1  而对于「基本类型」，以上操作均不能实现。\n前者由于Java不提供；后者由于「基本类型」不是复合类型，也就无法实现。\n  引用= 的语义？\n 将引用绑定给一个新的对象。    那么我们的「基本类型」能做什么事情？\n 读取它的值 修改它的值  那么，实际上，值类型的实现和引用类型的实现本质上的结果完全一致。\n  由此得出结论，对于「基本类型」，值类型和引用类型等价。\n对这篇文章的疑惑 语义上，我们难道不是按照值类型的语义来传递参数的吗？\n难道按照引用传递，不属于引用类型的语义吗？\npublic void test() throws Exception{  int x = 2;  foo(x); // 传递了值  System.out.println(x);  }  public static void foo(int x) {  x = 3; }  // out: // 可以看见传递了值 // 2 参数传递的语义？ 值传递：将值拷贝一份绑定给参数。\n引用传递：将地址拷贝一份绑定给参数。\n实际上无需大费周章再证明一遍。\n注意我阐述的，不是放进参数列表（如果这么表述容易产生思维误区），而是绑定给参数。\n那么参数，可以看作是「论据」中的y，「论据」的一切论述足以解释这个问题。\n思考题 有人指出，Java 的引用类型可以是 null，而原始类型不行，所以引用类型和值类型还是有区别的。但是其实这并不能否认本文指出的观点，你可以想想这是为什么吗？\n可能的解答：\n首先，这是一种边界条件：\n 引用类型：我们只要同意：null值对应指向0x0的地址。 值类型：Java对于基本类型有初始化置零操作。比如，int 类型的零值为0 。  于是可以发现，对于「基本类型」，两种语义的确重合。\n总结 思考这种基本问题，不能保证百分百有用，却有一种「明辨是非」的快乐。\n我的感悟：\n 即使是简单问题，也可以有严谨的讨论。不失为一次警示大脑的机会。 在寻求答案过程中，甚至还能发现被一些“不求甚解”的前人扭曲的解释。 思想实验的方法，可以很好地带动直觉论证一些结论。  REF Yin Wang - Java 有值类型吗？\n","wordCount":"109","inLanguage":"en","datePublished":"2022-02-13T04:20:03Z","dateModified":"2022-02-13T04:20:03Z","author":{"@type":"Person","name":"Noobi"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://xpectuer.github.io/my-blog/posts/compilers/java/java-value-type/java_value_type/"},"publisher":{"@type":"Organization","name":"苟利国家生死以，岂因祸福避趋之","logo":{"@type":"ImageObject","url":"https://jiayezheng.tech/images/sl.png"}}}</script>
 </head><body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script>
 <header class=header>
 <nav class=nav>
 <div class=logo>
 <a href=http://xpectuer.github.io/my-blog/ accesskey=h title="具体问题，具体分析是马克思主义活的灵魂 (Alt + H)">
-<img src=https://xpectuer.github.io/my-blog/images/sl.png alt=logo aria-label=logo height=35>具体问题，具体分析是马克思主义活的灵魂</a>
+<img src=https://jiayezheng.tech/images/sl.png alt=logo aria-label=logo height=35>具体问题，具体分析是马克思主义活的灵魂</a>
 <span class=logo-switches>
 <button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
 </button>
@@ -56,7 +56,7 @@
 <span>标签</span>
 </a>
 </li><li>
-<a href=https://xpectuer.github.io/my-blog title=主页>
+<a href=https://jiayezheng.tech/ title=主页>
 <span>主页</span>
 </a>
 </li></ul></nav></header><main class=main>
