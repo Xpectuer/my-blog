@@ -1,5 +1,5 @@
-baseURL: "http://jiayezheng.tech/my-blog/"
-#baseURL: "http://xpectuer.github.io/my-blog/"
+#baseURL: "http://jiayezheng.tech/my-blog/"
+baseURL: "http://xpectuer.github.io"
 #baseURL: "http://localhost:1313/my-blog/"
 title: "苟利国家生死以，岂因祸福避趋之"
 paginate: 5

@@ -3,7 +3,7 @@ title: "Continuation"
 date: 2022-03-08T11:30:03+00:00
 # weight: 1
 # aliases: ["/continuation"]
-tags: ["programming language"]
+tags: ["programming languages"]
 author: "Noobi"
 # author: ["Me", "You"] # multiple authors
 showToc: true
