@@ -1,3 +1,26 @@
+baseURL: "http://jiayezheng.tech/"
+#baseURL: "http://xpectuer.github.io"
+#baseURL: "http://localhost:1313/my-blog/"
+title: "苟利国家生死以，岂因祸福避趋之"
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# staticDir: true
+
+googleAnalytics: UA-123-45
+
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema. 
   title: "后现代主义生活黑客 \U0001F4DA"
@@ -41,8 +64,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     Title: "名声，只是一种糟糕的错觉 \U0001F4DA"
-    subtitle: "Computer Science is no more about computers than astronomy is about telescopes.<br>
-——— E. W. Dijkstra"
+    subtitle: "Computer Science is no more about computers than astronomy is about telescopes.<br>——— E. W. Dijkstra"
     imageUrl: "https://jiayezheng.tech/images/sl.png"
     imageWidth: 120
     imageHeight: 120
@@ -57,8 +79,7 @@ params:
   homeInfoParams:
     #Title: "Hi there \U0001F44B"
     Title: "名声，只是一种糟糕的错觉 \U0001F4DA"
-    Content: "Computer Science is no more about computers than astronomy is about telescopes.<br>
-——— E. W. Dijkstra"
+    Content: "Computer Science is no more about computers than astronomy is about telescopes.<br>——— E. W. Dijkstra"
 
   socialIcons:
     # - name: twitter
