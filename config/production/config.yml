@@ -26,7 +26,7 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "https://xpectuer.github.io/my-blog/images/sl.png"
+    favicon: "https://jiayezheng.tech/images/sl.png"
     favicon16x16: "<link / abs url>"
     favicon32x32: "<link / abs url>"
     apple_touch_icon: "<link resources/_gen/images/dio.webp>"
@@ -34,7 +34,7 @@ params:
 
   label:
     text: "具体问题，具体分析是马克思主义活的灵魂"
-    icon: "https://xpectuer.github.io/my-blog/images/sl.png" 
+    icon: "https://jiayezheng.tech/images/sl.png" 
     iconHeight: 35
 
   # profile-mode
@@ -43,7 +43,7 @@ params:
     Title: "名声，只是一种糟糕的错觉 \U0001F4DA"
     subtitle: "Computer Science is no more about computers than astronomy is about telescopes.<br>
 ——— E. W. Dijkstra"
-    imageUrl: "https://xpectuer.github.io/my-blog/images/sl.png"
+    imageUrl: "https://jiayezheng.tech/images/sl.png"
     imageWidth: 120
     imageHeight: 120
     imageTitle: noobi's image 
@@ -108,7 +108,7 @@ menu:
       weight: 20
     - identifier: home
       name: 主页
-      url: https://xpectuer.github.io/my-blog
+      url: https://jiayezheng.tech/
       weight: 30
 
 markup:
