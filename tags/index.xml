@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on 苟利国家生死以，岂因祸福避趋之</title>
-    <link>http://xpectuer.github.io/my-blog/tags/</link>
+    <link>http://jiayezheng.tech/tags/</link>
     <description>Recent content in Tags on 苟利国家生死以，岂因祸福避趋之</description>
     <image>
-      <url>http://xpectuer.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://xpectuer.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://jiayezheng.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://jiayezheng.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 08 Mar 2022 11:30:03 +0000</lastBuildDate><atom:link href="http://xpectuer.github.io/my-blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Mar 2022 11:30:03 +0000</lastBuildDate><atom:link href="http://jiayezheng.tech/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>programming languages</title>
-      <link>http://xpectuer.github.io/my-blog/tags/programming-languages/</link>
+      <link>http://jiayezheng.tech/tags/programming-languages/</link>
       <pubDate>Tue, 08 Mar 2022 11:30:03 +0000</pubDate>
       
-      <guid>http://xpectuer.github.io/my-blog/tags/programming-languages/</guid>
+      <guid>http://jiayezheng.tech/tags/programming-languages/</guid>
       <description></description>
     </item>
     
     <item>
       <title>static analysis</title>
-      <link>http://xpectuer.github.io/my-blog/tags/static-analysis/</link>
+      <link>http://jiayezheng.tech/tags/static-analysis/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
       
-      <guid>http://xpectuer.github.io/my-blog/tags/static-analysis/</guid>
+      <guid>http://jiayezheng.tech/tags/static-analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>algorithm</title>
-      <link>http://xpectuer.github.io/my-blog/tags/algorithm/</link>
+      <link>http://jiayezheng.tech/tags/algorithm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://xpectuer.github.io/my-blog/tags/algorithm/</guid>
+      <guid>http://jiayezheng.tech/tags/algorithm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>maths</title>
-      <link>http://xpectuer.github.io/my-blog/tags/maths/</link>
+      <link>http://jiayezheng.tech/tags/maths/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://xpectuer.github.io/my-blog/tags/maths/</guid>
+      <guid>http://jiayezheng.tech/tags/maths/</guid>
       <description></description>
     </item>
     

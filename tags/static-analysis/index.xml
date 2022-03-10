@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>static analysis on 苟利国家生死以，岂因祸福避趋之</title>
-    <link>http://xpectuer.github.io/my-blog/tags/static-analysis/</link>
+    <link>http://jiayezheng.tech/tags/static-analysis/</link>
     <description>Recent content in static analysis on 苟利国家生死以，岂因祸福避趋之</description>
     <image>
-      <url>http://xpectuer.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://xpectuer.github.io/my-blog/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://jiayezheng.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://jiayezheng.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="http://xpectuer.github.io/my-blog/tags/static-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="http://jiayezheng.tech/tags/static-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【软件分析笔记】数据流分析：基础与原理篇</title>
-      <link>http://xpectuer.github.io/my-blog/posts/compilers/static-analysis/data-flow-analysis/data-flow-analysis-foundations/</link>
+      <link>http://jiayezheng.tech/posts/compilers/static-analysis/data-flow-analysis/data-flow-analysis-foundations/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
       
-      <guid>http://xpectuer.github.io/my-blog/posts/compilers/static-analysis/data-flow-analysis/data-flow-analysis-foundations/</guid>
+      <guid>http://jiayezheng.tech/posts/compilers/static-analysis/data-flow-analysis/data-flow-analysis-foundations/</guid>
       <description>格、不动点定理与算法实现优化</description>
     </item>
     
     <item>
       <title>【软件分析笔记】数据流分析：应用篇</title>
-      <link>http://xpectuer.github.io/my-blog/posts/compilers/static-analysis/data-flow-analysis/data-flow-anlaysis-applications/</link>
+      <link>http://jiayezheng.tech/posts/compilers/static-analysis/data-flow-analysis/data-flow-anlaysis-applications/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
       
-      <guid>http://xpectuer.github.io/my-blog/posts/compilers/static-analysis/data-flow-analysis/data-flow-anlaysis-applications/</guid>
+      <guid>http://jiayezheng.tech/posts/compilers/static-analysis/data-flow-analysis/data-flow-anlaysis-applications/</guid>
       <description>介绍典型的数据流分析算法</description>
     </item>
     
