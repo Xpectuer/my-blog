@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://jiayezheng.tech/posts/compilers/continuation/continuation/</loc>
-    <lastmod>2022-03-08T11:30:03+00:00</lastmod>
+    <loc>http://jiayezheng.tech/posts/os/make_trick/</loc>
+    <lastmod>2022-04-27T11:30:03+00:00</lastmod>
   </url><url>
     <loc>http://jiayezheng.tech/posts/</loc>
+    <lastmod>2022-04-27T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>http://jiayezheng.tech/</loc>
+    <lastmod>2022-04-27T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>http://jiayezheng.tech/posts/compilers/continuation/continuation/</loc>
     <lastmod>2022-03-08T11:30:03+00:00</lastmod>
   </url><url>
     <loc>http://jiayezheng.tech/tags/programming-languages/</loc>
@@ -14,22 +20,19 @@
     <loc>http://jiayezheng.tech/tags/</loc>
     <lastmod>2022-03-08T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>http://jiayezheng.tech/</loc>
-    <lastmod>2022-03-08T11:30:03+00:00</lastmod>
-  </url><url>
     <loc>http://jiayezheng.tech/posts/compilers/java/java-value-type/java_value_type/</loc>
     <lastmod>2022-02-13T04:20:03+00:00</lastmod>
-  </url><url>
-    <loc>http://jiayezheng.tech/tags/static-analysis/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>http://jiayezheng.tech/aboutme/</loc>
-    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
     <loc>http://jiayezheng.tech/posts/compilers/static-analysis/data-flow-analysis/data-flow-analysis-foundations/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
     <loc>http://jiayezheng.tech/posts/compilers/static-analysis/data-flow-analysis/data-flow-anlaysis-applications/</loc>
+    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>http://jiayezheng.tech/tags/static-analysis/</loc>
+    <lastmod>2020-09-15T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>http://jiayezheng.tech/aboutme/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
     <loc>http://jiayezheng.tech/tags/algorithm/</loc>
