@@ -1,7 +1,7 @@
 baseURL: "http://jiayezheng.tech/"
 #baseURL: "http://xpectuer.github.io"
 #baseURL: "http://localhost:1313/my-blog/"
-title: "苟利国家生死以，岂因祸福避趋之"
+title: "名声，只是一种糟糕的错觉"
 paginate: 5
 theme: PaperMod
 
@@ -56,14 +56,14 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "具体问题，具体分析是马克思主义活的灵魂"
+    text: "名声，只是一种糟糕的错觉"
     icon: "https://jiayezheng.tech/images/sl.png" 
     iconHeight: 35
 
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    Title: "名声，只是一种糟糕的错觉 \U0001F4DA"
+    Title: "编程的本质，是人们丧失已久的艺术形式，即「思考」 \U0001F4DA"
     subtitle: "Computer Science is no more about computers than astronomy is about telescopes.<br>——— E. W. Dijkstra"
     imageUrl: "https://jiayezheng.tech/images/sl.png"
     imageWidth: 120
