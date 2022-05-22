@@ -38,12 +38,6 @@ editPost:
 
 Hi! I am Xpectuer. An indie developer.
 
-I am a Golang, Java developer and a Stoic.
-
-Recently I am really into **Program Analysis**, **Compilers**, **Machine Learning** and etc. 
-
-I also prefer to learn Maths, Philosophy and History.
-
 May we have a profound discussion :)
 
 ---
