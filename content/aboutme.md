@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "About ME. You need to know."
+description: ""
 canonicalURL: "/aboutme"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -35,10 +35,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 
-
-Hi! I am Xpectuer. An indie developer.
-
-May we have a profound discussion :)
+I am the absolute negativity.
 
 ---
 
