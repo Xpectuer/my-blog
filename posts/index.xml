@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on 名声，只是一种糟糕的错觉</title>
+    <title>Posts on </title>
     <link>http://jiayezheng.tech/posts/</link>
-    <description>Recent content in Posts on 名声，只是一种糟糕的错觉</description>
+    <description>Recent content in Posts on </description>
     <image>
       <url>http://jiayezheng.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>http://jiayezheng.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 May 2022 11:30:03 +0000</lastBuildDate><atom:link href="http://jiayezheng.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sat, 27 May 2023 11:30:03 +0000</lastBuildDate><atom:link href="http://jiayezheng.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>炮打科学革命论 </title>
+      <link>http://jiayezheng.tech/posts/ideology/kuhn/</link>
+      <pubDate>Sat, 27 May 2023 11:30:03 +0000</pubDate>
+      
+      <guid>http://jiayezheng.tech/posts/ideology/kuhn/</guid>
+      <description>辩证唯物主义兵临城下。</description>
+    </item>
+    
     <item>
       <title>论「专家人设」</title>
       <link>http://jiayezheng.tech/posts/miscs/fake_specialists/</link>

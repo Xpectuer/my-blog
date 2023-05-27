@@ -1,15 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on 名声，只是一种糟糕的错觉</title>
+    <title>Tags on </title>
     <link>http://jiayezheng.tech/tags/</link>
-    <description>Recent content in Tags on 名声，只是一种糟糕的错觉</description>
+    <description>Recent content in Tags on </description>
     <image>
       <url>http://jiayezheng.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>http://jiayezheng.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 May 2022 11:30:03 +0000</lastBuildDate><atom:link href="http://jiayezheng.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sat, 27 May 2023 11:30:03 +0000</lastBuildDate><atom:link href="http://jiayezheng.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dialect</title>
+      <link>http://jiayezheng.tech/tags/dialect/</link>
+      <pubDate>Sat, 27 May 2023 11:30:03 +0000</pubDate>
+      
+      <guid>http://jiayezheng.tech/tags/dialect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ideology Criticize</title>
+      <link>http://jiayezheng.tech/tags/ideology-criticize/</link>
+      <pubDate>Sat, 27 May 2023 11:30:03 +0000</pubDate>
+      
+      <guid>http://jiayezheng.tech/tags/ideology-criticize/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Philosophy</title>
+      <link>http://jiayezheng.tech/tags/philosophy/</link>
+      <pubDate>Sat, 27 May 2023 11:30:03 +0000</pubDate>
+      
+      <guid>http://jiayezheng.tech/tags/philosophy/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>miscs</title>
       <link>http://jiayezheng.tech/tags/miscs/</link>
