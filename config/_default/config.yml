@@ -1,7 +1,7 @@
 baseURL: "http://jiayezheng.tech/"
 #baseURL: "http://xpectuer.github.io"
 #baseURL: "http://localhost:1313/my-blog/"
-title: "名声，只是一种糟糕的错觉"
+title: ""
 paginate: 5
 theme: PaperMod
 
@@ -14,16 +14,13 @@ buildExpired: false
 
 googleAnalytics: UA-123-45
 
-
 minify:
   disableXML: true
   minifyOutput: true
 
-
-
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema. 
-  title: "后现代主义生活黑客 \U0001F4DA"
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: "梦结束了，辩证唯物主义已然兵临城下 \U0001F4DA"
   description: "ExampleSite description"
   keywords: [Blog, Portfolio, PaperMod]
   author: Me
@@ -49,26 +46,27 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "https://jiayezheng.tech/images/sl.png"
+    # favicon: "https://jiayezheng.tech/images/sl.png"
+    favicon: ""
     favicon16x16: "<link / abs url>"
     favicon32x32: "<link / abs url>"
     apple_touch_icon: "<link resources/_gen/images/dio.webp>"
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "名声，只是一种糟糕的错觉"
-    icon: "https://jiayezheng.tech/images/sl.png" 
+    text: "梦结束了，辩证唯物主义已然兵临城下"
+    icon: ""
     iconHeight: 35
 
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    Title: "编程的本质，是人们丧失已久的艺术形式，即「思考」 \U0001F4DA"
-    subtitle: "Computer Science is no more about computers than astronomy is about telescopes.<br>——— E. W. Dijkstra"
-    imageUrl: "https://jiayezheng.tech/images/sl.png"
+    Title: "梦结束了，辩证唯物主义已然兵临城下 \U0001F4DA"
+    subtitle: ""
+    imageUrl: ""
     imageWidth: 120
     imageHeight: 120
-    imageTitle: noobi's image 
+    imageTitle: noobi's image
     buttons:
       - name: Posts
         url: posts
@@ -78,7 +76,7 @@ params:
   # home-info mode
   homeInfoParams:
     #Title: "Hi there \U0001F44B"
-    Title: "名声，只是一种糟糕的错觉 \U0001F4DA"
+    Title: "梦结束了，辩证唯物主义已然兵临城下 \U0001F4DA"
     Content: "Computer Science is no more about computers than astronomy is about telescopes.<br>——— E. W. Dijkstra"
 
   socialIcons:
@@ -136,4 +134,3 @@ markup:
   goldmark:
     renderer:
       unsafe: true
-
